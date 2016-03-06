@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 项目
+title: 经历
 comments: true
 permalink: /projects/
 ---
