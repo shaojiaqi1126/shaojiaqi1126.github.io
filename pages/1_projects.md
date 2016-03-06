@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 经历
+title: 项目
 comments: true
 permalink: /projects/
 ---
@@ -8,8 +8,6 @@ permalink: /projects/
 * content
 {:toc}
 
-# All my projects
-Following are projects started by me. 
 
 ## NPL project
 * Started: 2004-present

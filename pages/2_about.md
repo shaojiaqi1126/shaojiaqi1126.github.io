@@ -23,7 +23,7 @@ permalink: /about/
 * markdown reference: [kramdown](http://kramdown.gettalong.org/quickref.html)
 
 ### About comments
-Add a variable called `comments` to the [YAML front matter](http://jekyllrb.com/docs/frontmatter/) and set its value to true. A sample might look like:
+Add a `variable called comments` to the [YAML front matter](http://jekyllrb.com/docs/frontmatter/) and set its value to true. A sample might look like:
 
     ---
     layout: post
