@@ -8,8 +8,8 @@ permalink: /about/
 * content
 {:toc}
 
-# 自我介绍
-邵佳琪
+# 介绍
+山水也许不相逢
 [微博](http://weibo.com/u/2727401791/home?wvr=5) [github](https://github.com/shaojiaqi1126)
 
 ### Admin tools

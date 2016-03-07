@@ -452,6 +452,36 @@ blockquote:last-child {
 	bottom: 0px;
 }
 
+.logo {
+	float: left;
+	width: 80px;
+	height: 45px;
+	margin: 0 auto;
+	-webkit-transition: -webkit-transform 1s ease-out;
+}
+.logo:hover {
+	-webkit-transform: rotateZ(360deg);
+	-moz-transform: rotateZ(360deg);
+	-o-transform: rotateZ(360deg);
+	-ms-transform: rotateZ(360deg);
+	transform: rotateZ(360deg);
+}
+
+.logo a  {
+    display: inline-block;
+    font-size: 26px;
+    line-height: 40px;
+    max-width: 200px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+	outline: medium none;
+    text-decoration: none;
+	color: #ffffff;
+}
+
+
+
 @media screen and (max-width: 1200px){
 	.post{
 		padding:10px 10px;
