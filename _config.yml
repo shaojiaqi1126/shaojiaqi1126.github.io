@@ -30,6 +30,6 @@ markdown: kramdown
 port: 9999
 
 # highlight
-# highlighter: pygments
+highlighter: pygments
 # highlighter: rouge
 # highlighter: false
