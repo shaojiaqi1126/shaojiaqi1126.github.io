@@ -19,6 +19,17 @@
           <span><a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a></span>
           <span class="point"> · </span>
           <span>&copy; 2016 知秋客</span>
+		  <span class="point"> · </span>
+			<!-- 音乐播放 -->
+			<div style="padding: 0px 0px 0px; right: 100px; width: 44px;bottom: 0px; color: rgb(255, 255, 255); font-family:STHeiti; font-size: 33px; position: fixed;">
+				<div id="lanren">
+				<div id="audio-btn" class="off" onclick="lanren.changeClass(this,&#39;media&#39;)">
+					<audio loop="loop" src="/static/mp3/pingfanzhilu.mp3" id="media" preload="preload"></audio>
+				</div>
+				</div>
+				<script type="text/javascript" src="{{ "/static/mp3/js/music.js" | prepend:site.baseurl }}"></script>
+			</div>
+		  	
       </div>
     </div>
   </div>
