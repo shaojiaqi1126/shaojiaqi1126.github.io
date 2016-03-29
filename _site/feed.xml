@@ -5,9 +5,75 @@
     <description>邵佳琪 Ideas &amp; Blogs</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 07 Mar 2016 17:26:09 +0800</pubDate>
-    <lastBuildDate>Mon, 07 Mar 2016 17:26:09 +0800</lastBuildDate>
+    <pubDate>Tue, 29 Mar 2016 15:32:16 +0800</pubDate>
+    <lastBuildDate>Tue, 29 Mar 2016 15:32:16 +0800</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
+    
+      <item>
+        <title>Jd_auto_daka</title>
+        <description>&lt;h2 id=&quot;section&quot;&gt;京东员工设置自动打卡&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;当然作为员工来说，这样的做法可能不合乎公司的考核制度，但是因为一些特殊的原因，比如说请假临时给领导请假，这样的情况下，这些时候一个难题     &lt;strong&gt;不能正常的打卡&lt;/strong&gt; ，这个自动打卡也就是基于这样的目的产生了。希望看到的同学不去滥用而让这一出于便利目的福利随风而逝。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;ul&gt;
+    &lt;li&gt;安装谷歌浏览器&lt;/li&gt;
+    &lt;li&gt;进入打卡界面&lt;/li&gt;
+    &lt;li&gt;进入开发者模式&lt;/li&gt;
+    &lt;li&gt;嵌入代码&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;section-1&quot;&gt;谷歌浏览器&lt;/h3&gt;
+
+&lt;p&gt;谷歌浏览器即&lt;code&gt;Chrome&lt;/code&gt;浏览器，&lt;strong&gt;百度搜索&lt;/strong&gt; 即可，安装完成打开。&lt;/p&gt;
+
+&lt;h3 id=&quot;section-2&quot;&gt;打卡界面&lt;/h3&gt;
+
+&lt;p&gt;进入 &lt;code&gt;ERP&lt;/code&gt; 系统 ， 点击左侧 &lt;strong&gt;打卡&lt;/strong&gt; 弹出即打卡页面。
+&lt;img src=&quot;http://blogimg.56fa1745c7549.d01.nanoyun.com/daka.png&quot; alt=&quot;打卡界面&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;section-3&quot;&gt;开发者模式&lt;/h3&gt;
+
+&lt;p&gt;进入打开界面，按&lt;code&gt;F12&lt;/code&gt;，即可进入开发者模式。&lt;code&gt;Ctrl+C&lt;/code&gt;复制下面一段代码：
+* Embedding code&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-lua&quot; data-lang=&quot;lua&quot;&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt; 
+	&lt;span class=&quot;n&quot;&gt;window&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;setInterval&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;digClick&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;30000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; 
+	&lt;span class=&quot;k&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;digClick&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt; 
+	  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;.hour&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;18&amp;quot;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;.minute&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;31&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
+		&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;#clockIn&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;click&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+	  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    	&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;.l-btn&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;click&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+	  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;})();&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;ps:这是一段很简单的js匿名函数，使用 &lt;strong&gt;setInterval&lt;/strong&gt; 方法。&lt;/p&gt;
+
+&lt;p&gt;这段代码的作用是：每30000ms（根据修改可以修改），也就是30s的时间去判断一次，判断打卡界面的时间（上图中的“11：47”），是不是和我们设置的打卡时间一致，代码中“18”和“31”就是设置的打卡时间，如果有需求修改即可。&lt;/p&gt;
+
+&lt;p&gt;####嵌入打卡代码&lt;/p&gt;
+
+&lt;p&gt;上一步骤复制的代码，&lt;code&gt;Ctrl+V&lt;/code&gt;粘贴到开发者模式&lt;code&gt;F12&lt;/code&gt;已经打开的窗口，按 &lt;code&gt;Enter&lt;/code&gt;键即可。这样我们就把自动打卡就设置成功了，当然不放心的同学可以，尝试一下设置可以能立即执行打开的时间验证这段程序。&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;还是那句话，我们不是为了逃避打开而做了这样的程序，不应该过分去滥用。
+慎重！慎重！！慎重！！！ 
+重要的事情说三遍。说三遍。说三遍。&lt;/p&gt;
+</description>
+        <pubDate>Tue, 29 Mar 2016 00:00:00 +0800</pubDate>
+        <link>/2016/03/29/jd_auto_daka/</link>
+        <guid isPermaLink="true">/2016/03/29/jd_auto_daka/</guid>
+        
+        
+        <category>diary</category>
+        
+      </item>
     
       <item>
         <title>Empty Template</title>
